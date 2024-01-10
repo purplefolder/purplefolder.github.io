@@ -50,6 +50,9 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -62,6 +65,7 @@
     <nav>
         <a href="#" onclick="showCategory('momo')">Momo</a>
         <a href="#" onclick="showCategory('sekuwa')">Sekuwa</a>
+        <a href="#" onclick="showCategory('burger')">Burger</a>
     </nav>
 
     <section>
@@ -119,6 +123,16 @@
             <div>Pork Sekuwa (1/2 kg)</div>
             <div>Rs. 550</div>
         </div>
+
+        <div class="menu-item burger" id="burger-chicken">
+            <div>Chicken Burger</div>
+            <div>Rs. 220</div>
+        </div>
+
+        <div class="menu-item burger" id="burger-veg">
+            <div>Veg Burger</div>
+            <div>Rs. 180</div>
+        </div>
     </section>
 
     <footer>
@@ -137,6 +151,9 @@
                 item.style.display = 'flex';
             });
         }
+
+        // Show 'momo' category by default
+        showCategory('momo');
     </script>
 
 </body>
