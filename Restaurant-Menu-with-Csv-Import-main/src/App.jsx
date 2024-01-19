@@ -51,9 +51,9 @@ const CsvImporter = () => {
                 <table>
                   <thead>
                     <tr>
-                      {Object.keys(csvData[0]).map((header) => (
-                        <th key={header}>{header}</th>
-                      ))}
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
                     </tr>
                   </thead>
                   <tbody className='cat2'>
@@ -61,9 +61,9 @@ const CsvImporter = () => {
                       .filter((row) => row.Category === selectedCategory)
                       .map((row, index) => (
                         <tr key={index}>
-                          {Object.values(row).map((value, colIndex) => (
-                            <td key={colIndex}>{value}</td>
-                          ))}
+                          <td>{row.Item}</td>
+                          <td>{row.Quantity}</td>
+                          <td>{row.Price}</td>
                         </tr>
                       ))}
                   </tbody>
