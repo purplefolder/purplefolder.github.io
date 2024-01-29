@@ -1,0 +1,61 @@
+Category,Item,Quantity,Price
+Aalu,Magic aalu,fullplate,170
+Aalu,Mustang aalu,fullplate,170
+Aalu,French fry,fullplate,140
+Aalu,Jeera aalu,fullplate,140
+Aalu,Aalu aachar,fullplate,140
+Aalu,Aalu chilly,fullplate,160
+Aalu,Aalu pokeko,fullplate,190
+Aalu,Aalu pokoda,fullplate,120
+Aalu,Crispy potato bhuja,fullplate,160
+Aalu,Aalu cutlet,fullplate,140
+SADEKO,Peanut sadeko,fullplate,160
+SADEKO,Chauchau sadeko,fullplate,120
+SADEKO,Chatpate,fullplate,110
+SADEKO,Grilled chicken sadeko,full,150
+SADEKO,Grilled chicken sadeko,half,100
+SADEKO,Grilled chicken sadeko,Quarter,50
+SNACKS,Mushroom chilly,fullplate,220
+SNACKS,Timrure chicken,fullplate,290
+SNACKS,Crispy cron chilly,fullplate,150
+SNACKS, Chicken wings fried,fullplate,290
+SNACKS,Mole pooleko,fullplate,300
+SNACKS,Chicken chilly,fullplate,250
+SNACKS,Crispy fried chicken,fullplate,220
+SNACKS,Buff chilly,fullplate,280
+SNACKS,Chicken meat ball,fullplate,250
+SNACKS,Chicken roll,fullplate,200
+Rice,Chicken fried rice,fullplate,190
+Rice,Veg fried rice,fullplate,160
+Rice,Veg fried rice,half,90
+Rice,Mix fried rice,fullplate,220
+Rice,Pork fried rice,fullplate,170
+Rice,Buff fried rice,fullplate,170
+Rice,Mix fried rice,half,110
+Rice,Pork fried rice,half,90
+Rice,Buff fried rice,half,100
+Soup,Monchau soup veg,fullplate,140
+Soup,Non_veg chicken,fullplate,170    
+Soup,Hot and Soup  veg,fullplate,140
+Soup,Non_veg chicken,fullplate,170     
+Soup,Cream of chicken,fullplate,180             
+SAUSAGE,Buff,fullplate,40
+SAUSAGE,Chicken,fullplate,60
+Chowmin,Chicken chowmin,fullplate,170
+Chowmin,Buff chowmin,fullplate,140
+Chowmin,Veg chowmin,fullplate,110
+Chowmin,Chicken chowmin,half,170
+Chowmin,Buff chowmin,half,90
+Chowmin,Veg chowmin,half,70
+KEEMA NOODULs,Chicken keema noodle,fullplate,170
+KEEMA NOODULs,Buff keema Nooduls,fullplate,170
+THUPA,Chicken thupa,fullplate,180
+THUPA,Buff thupa,fullplate,180
+THUPA,Mix thupa,fullplate,220
+THUPA,Veg thupa,fullplate,140
+SEKUWA,Chicken ,plate,290
+SEKUWA,Chicken ,half,500
+SEKUWA,Chicken ,per.kg ,950
+SEKUWA,Chicken ,plate,950
+SEKUWA,Buff,per.kg,500
+SEKUWA,Pork,half ,290
