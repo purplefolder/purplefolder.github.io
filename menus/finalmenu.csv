@@ -1,61 +1,61 @@
-Category,Item,Quantity,Price
-Aalu,Magic aalu,fullplate,170
-Aalu,Mustang aalu,fullplate,170
-Aalu,French fry,fullplate,140
-Aalu,Jeera aalu,fullplate,140
-Aalu,Aalu aachar,fullplate,140
-Aalu,Aalu chilly,fullplate,160
-Aalu,Aalu pokeko,fullplate,190
-Aalu,Aalu pokoda,fullplate,120
-Aalu,Crispy potato bhuja,fullplate,160
-Aalu,Aalu cutlet,fullplate,140
-SADEKO,Peanut sadeko,fullplate,160
-SADEKO,Chauchau sadeko,fullplate,120
-SADEKO,Chatpate,fullplate,110
-SADEKO,Grilled chicken sadeko,full,150
-SADEKO,Grilled chicken sadeko,half,100
-SADEKO,Grilled chicken sadeko,Quarter,50
-SNACKS,Mushroom chilly,fullplate,220
-SNACKS,Timrure chicken,fullplate,290
-SNACKS,Crispy cron chilly,fullplate,150
-SNACKS, Chicken wings fried,fullplate,290
-SNACKS,Mole pooleko,fullplate,300
-SNACKS,Chicken chilly,fullplate,250
-SNACKS,Crispy fried chicken,fullplate,220
-SNACKS,Buff chilly,fullplate,280
-SNACKS,Chicken meat ball,fullplate,250
-SNACKS,Chicken roll,fullplate,200
-Rice,Chicken fried rice,fullplate,190
-Rice,Veg fried rice,fullplate,160
-Rice,Veg fried rice,half,90
-Rice,Mix fried rice,fullplate,220
-Rice,Pork fried rice,fullplate,170
-Rice,Buff fried rice,fullplate,170
-Rice,Mix fried rice,half,110
-Rice,Pork fried rice,half,90
-Rice,Buff fried rice,half,100
-Soup,Monchau soup veg,fullplate,140
-Soup,Non_veg chicken,fullplate,170    
-Soup,Hot and Soup  veg,fullplate,140
-Soup,Non_veg chicken,fullplate,170     
-Soup,Cream of chicken,fullplate,180             
-SAUSAGE,Buff,fullplate,40
-SAUSAGE,Chicken,fullplate,60
-Chowmin,Chicken chowmin,fullplate,170
-Chowmin,Buff chowmin,fullplate,140
-Chowmin,Veg chowmin,fullplate,110
-Chowmin,Chicken chowmin,half,170
-Chowmin,Buff chowmin,half,90
-Chowmin,Veg chowmin,half,70
-KEEMA Noodles,Chicken keema noodle,fullplate,170
-KEEMA Noodles,Buff keema Nooduls,fullplate,170
-THUPA,Chicken thupa,fullplate,180
-THUPA,Buff thupa,fullplate,180
-THUPA,Mix thupa,fullplate,220
-THUPA,Veg thupa,fullplate,140
-SEKUWA,Chicken ,plate,290
-SEKUWA,Chicken ,half,500
-SEKUWA,Chicken ,per.kg ,950
-SEKUWA,Chicken ,plate,950
-SEKUWA,Buff,per.kg,500
-SEKUWA,Pork,half ,290
+Category,Item,Quantity,Price,Image
+Aalu,Magic aalu,fullplate,170,./Images/Aalu_chilly.jpeg
+Aalu,Mustang aalu,fullplate,170,./Images/Aalu_chilly.jpeg
+Aalu,French fry,fullplate,140,./Images/Aalu_chilly.jpeg
+Aalu,Jeera aalu,fullplate,140,./Images/Aalu_chilly.jpeg
+Aalu,Aalu aachar,fullplate,140,./Images/Aalu_chilly.jpeg
+Aalu,Aalu chilly,fullplate,160,./Images/Aalu_chilly.jpeg
+Aalu,Aalu pokeko,fullplate,190,./Images/Aalu_chilly.jpeg
+Aalu,Aalu pokoda,fullplate,120,./Images/Aalu_chilly.jpeg
+Aalu,Crispy potato bhuja,fullplate,160,./Images/Aalu_chilly.jpeg
+Aalu,Aalu cutlet,fullplate,140,./Images/Aalu_chilly.jpeg
+SADEKO,Peanut sadeko,fullplate,160,./Images/penaut_sadeko.jpeg
+SADEKO,Chauchau sadeko,fullplate,120,./Images/penaut_sadeko.jpeg
+SADEKO,Chatpate,fullplate,110,./Images/penaut_sadeko.jpeg
+SADEKO,Grilled chicken sadeko,full,150,./Images/penaut_sadeko.jpeg
+SADEKO,Grilled chicken sadeko,half,100,./Images/penaut_sadeko.jpeg
+SADEKO,Grilled chicken sadeko,Quarter,50,./Images/penaut_sadeko.jpeg
+SNACKS,Mushroom chilly,fullplate,220,/component/Images/
+SNACKS,Timrure chicken,fullplate,290,./Images/snack.webp
+SNACKS,Crispy cron chilly,fullplate,150,./Images/snack.webp
+SNACKS, Chicken wings fried,fullplate,290,./Images/snack.webp
+SNACKS,Mole pooleko,fullplate,300,./Images/snack.webp
+SNACKS,Chicken chilly,fullplate,250,./Images/snack.webp
+SNACKS,Crispy fried chicken,fullplate,220,./Images/snack.webp
+SNACKS,Buff chilly,fullplate,280,./Images/snack.webp
+SNACKS,Chicken meat ball,fullplate,250,./Images/snack.webp
+SNACKS,Chicken roll,fullplate,200,./Images/snack.webp
+Rice,Chicken fried rice,fullplate,190,./Images/rice.jpeg
+Rice,Veg fried rice,fullplate,160,./Images/rice.jpeg
+Rice,Veg fried rice,half,90,./Images/rice.jpeg
+Rice,Mix fried rice,fullplate,220,./Images/rice.jpeg
+Rice,Pork fried rice,fullplate,170,./Images/rice.jpeg
+Rice,Buff fried rice,fullplate,170,./Images/rice.jpeg
+Rice,Mix fried rice,half,110,./Images/rice.jpeg
+Rice,Pork fried rice,half,90,./Images/rice.jpeg
+Rice,Buff fried rice,half,100,./Images/rice.jpeg
+Soup,Monchau soup veg,fullplate,140,./Images/soup.webp
+Soup,Non_veg chicken,fullplate,170,./Images/soup.webp  
+Soup,Hot and Soup  veg,fullplate,140,./Images/soup.webp
+Soup,Non_veg chicken,fullplate,170,./Images/soup.webp
+Soup,Cream of chicken,fullplate,180,./Images/soup.webp             
+SAUSAGE,Buff,fullplate,40,./Images/sausages.webp
+SAUSAGE,Chicken,fullplate,60,./Images/sausages.webp
+Chowmin,Chicken chowmin,fullplate,170,./Images/chowmin1.webp
+Chowmin,Buff chowmin,fullplate,140,./Images/chowmin1.webp
+Chowmin,Veg chowmin,fullplate,110,./Images/chowmin1.webp
+Chowmin,Chicken chowmin,half,170,./Images/chowmin1.webp
+Chowmin,Buff chowmin,half,90,./Images/chowmin1.webp
+Chowmin,Veg chowmin,half,70,./Images/chowmin1.webp
+KEEMA NOODULS,Chicken keema noodle,fullplate,170,./Images/keema.webp
+KEEMA NOODULS,Buff keema Nooduls,fullplate,170,./Images/keema.webp
+THUPA,Chicken thupa,fullplate,180,./Images/ThukpaSoup.webp
+THUPA,Buff thupa,fullplate,180,./Images/ThukpaSoup.webp
+THUPA,Mix thupa,fullplate,220,./Images/ThukpaSoup.webp
+THUPA,Veg thupa,fullplate,140,./Images/ThukpaSoup.webp
+SEKUWA,Chicken ,plate,290,./Images/Sekuwaa.jpeg
+SEKUWA,Chicken ,half,500,./Images/Sekuwaa.jpeg
+SEKUWA,Chicken ,per.kg ,950,./Images/Sekuwaa.jpeg
+SEKUWA,Chicken ,plate,950,./Images/Sekuwaa.jpeg
+SEKUWA,Buff,per.kg,500,./Images/Sekuwaa.jpeg
+SEKUWA,Pork,half ,290,./Images/Sekuwaa.jpeg
