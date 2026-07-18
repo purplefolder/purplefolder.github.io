@@ -37,7 +37,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl text-purple-200 mb-3 font-light max-w-2xl mx-auto leading-relaxed">
-          Outsource web applications and backend development to Kathmandu.
+          Outsource web applications and backend development.
         </p>
         <p className="text-sm md:text-base text-purple-300/60 mb-12 max-w-xl mx-auto">
           Computer Engineers trusted by clients across the UK, US, Australia,
