@@ -1,5 +1,4 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import { Mail, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react'
 
 export default function Contact() {
   const [ref, isVisible] = useScrollAnimation()
@@ -40,7 +39,7 @@ export default function Contact() {
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-11 h-11 bg-purple-100 rounded-2xl flex items-center justify-center group-hover:bg-purple-600 transition-colors flex-shrink-0">
-                    <Mail size={18} className="text-purple-600 group-hover:text-white transition-colors" />
+                    <i className="fas fa-envelope text-lg text-purple-600 group-hover:text-white transition-colors" />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium mb-0.5">
@@ -54,7 +53,7 @@ export default function Contact() {
 
                 <div className="flex items-center gap-4">
                   <div className="w-11 h-11 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <MapPin size={18} className="text-purple-600" />
+                    <i className="fas fa-location-dot text-lg text-purple-600" />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium mb-0.5">
@@ -73,10 +72,10 @@ export default function Contact() {
                 </div>
                 <div className="flex gap-3">
                   {[
-                    { Icon: Facebook, href: 'https://www.facebook.com/purplefolder/', label: 'Facebook' },
-                    { Icon: Twitter, href: 'https://twitter.com/purple_folder', label: 'Twitter' },
-                    { Icon: Linkedin, href: 'https://www.linkedin.com/in/purplefolder', label: 'LinkedIn' },
-                  ].map(({ Icon, href, label }) => (
+                    { icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/purplefolder/', label: 'Facebook' },
+                    { icon: 'fab fa-x-twitter', href: 'https://twitter.com/purple_folder', label: 'Twitter' },
+                    { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/purplefolder', label: 'LinkedIn' },
+                  ].map(({ icon, href, label }) => (
                     <a
                       key={label}
                       href={href}
@@ -85,7 +84,7 @@ export default function Contact() {
                       aria-label={label}
                       className="w-10 h-10 bg-gray-100 hover:bg-purple-600 rounded-2xl flex items-center justify-center text-gray-600 hover:text-white transition-all duration-200"
                     >
-                      <Icon size={16} />
+                      <i className={`${icon} text-base`} />
                     </a>
                   ))}
                 </div>

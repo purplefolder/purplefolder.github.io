@@ -1,5 +1,4 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import { CheckCircle } from 'lucide-react'
 
 function AnimatedDiv({ children, direction = 'up', delay = 0, className = '' }) {
   const [ref, isVisible] = useScrollAnimation()
@@ -62,10 +61,7 @@ export default function About() {
             <ul className="space-y-3">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <CheckCircle
-                    size={20}
-                    className="text-purple-500 mt-0.5 flex-shrink-0"
-                  />
+                  <i className="fas fa-circle-check text-purple-500 text-xl mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm">{item}</span>
                 </li>
               ))}

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { CheckCircle, Clock, Home, MessageSquare, BookOpen, Gift, Banknote, Users, Mail } from 'lucide-react'
 
 const requirements = [
   'Basic knowledge of Python (at least one project completed)',
@@ -13,17 +12,17 @@ const requirements = [
 ]
 
 const jobDetails = [
-  { Icon: Clock, text: 'Work only 4 hours a day — flexible timing (morning, evening, or daytime)' },
-  { Icon: Home, text: 'Fully remote — work from home' },
-  { Icon: MessageSquare, text: 'Communicate regularly through Slack' },
-  { Icon: CheckCircle, text: 'Weekend work expected; leave granted for urgent personal matters' },
+  { icon: 'fa-clock', text: 'Work only 4 hours a day — flexible timing (morning, evening, or daytime)' },
+  { icon: 'fa-house', text: 'Fully remote — work from home' },
+  { icon: 'fa-comments', text: 'Communicate regularly through Slack' },
+  { icon: 'fa-circle-check', text: 'Weekend work expected; leave granted for urgent personal matters' },
 ]
 
 const benefits = [
-  { Icon: BookOpen, text: 'Learn many technologies across real client projects' },
-  { Icon: CheckCircle, text: 'Leaves on exam time and other important events' },
-  { Icon: Banknote, text: 'Monthly salary + percentage of project income' },
-  { Icon: Users, text: 'Supportive team environment — learn from others where you\'re weak' },
+  { icon: 'fa-book-open', text: 'Learn many technologies across real client projects' },
+  { icon: 'fa-calendar-check', text: 'Leaves on exam time and other important events' },
+  { icon: 'fa-money-bill-wave', text: 'Monthly salary + percentage of project income' },
+  { icon: 'fa-users', text: 'Supportive team environment — learn from others where you\'re weak' },
 ]
 
 function AnimatedDiv({ children, delay = 0, className = '' }) {
@@ -43,29 +42,28 @@ function AnimatedDiv({ children, delay = 0, className = '' }) {
   )
 }
 
-function ListSection({ title, emoji, items, isIconList = false }) {
+function ListSection({ title, icon, items, isIconList = false }) {
   return (
     <div>
-      <h3 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
-        <span className="text-lg">{emoji}</span>
+      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <i className={`fas ${icon} text-lg text-purple-600`} />
         {title}
       </h3>
       <ul className="space-y-3">
         {items.map((item, i) => {
           if (isIconList) {
-            const { Icon, text } = item
             return (
               <li key={i} className="flex items-start gap-3">
                 <div className="w-7 h-7 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Icon size={14} className="text-purple-600" />
+                  <i className={`fas ${item.icon} text-xs text-purple-600`} />
                 </div>
-                <span className="text-gray-600 text-sm leading-relaxed">{text}</span>
+                <span className="text-gray-600 text-sm leading-relaxed">{item.text}</span>
               </li>
             )
           }
           return (
             <li key={i} className="flex items-start gap-3">
-              <CheckCircle size={16} className="text-purple-500 flex-shrink-0 mt-0.5" />
+              <i className="fas fa-circle-check text-purple-500 text-base flex-shrink-0 mt-0.5" />
               <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
             </li>
           )
@@ -115,7 +113,7 @@ export default function CareerPage() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
-          <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none">
+          <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none" style={{ display: 'block', height: '60px' }}>
             <path
               d="M0 60L60 51C120 42 240 24 360 18C480 12 600 18 720 24C840 30 960 36 1080 39C1200 42 1320 42 1380 42L1440 42V60H0Z"
               fill="white"
@@ -154,7 +152,7 @@ export default function CareerPage() {
               <div className="p-6 sm:p-8">
                 <ListSection
                   title="We Expect"
-                  emoji="🎯"
+                  icon="fa-bullseye"
                   items={requirements}
                 />
               </div>
@@ -163,7 +161,7 @@ export default function CareerPage() {
               <div className="p-6 sm:p-8">
                 <ListSection
                   title="Job Description"
-                  emoji="💼"
+                  icon="fa-briefcase"
                   items={jobDetails}
                   isIconList
                 />
@@ -173,7 +171,7 @@ export default function CareerPage() {
               <div className="p-6 sm:p-8">
                 <ListSection
                   title="Benefits"
-                  emoji="🎁"
+                  icon="fa-gift"
                   items={benefits}
                   isIconList
                 />
@@ -192,12 +190,12 @@ export default function CareerPage() {
                     href="mailto:info@purplefolder.com.np"
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-sm px-6 py-3.5 rounded-2xl hover:opacity-90 transition-opacity whitespace-nowrap flex-shrink-0"
                   >
-                    <Mail size={16} />
+                    <i className="fas fa-envelope text-sm" />
                     Apply Now
                   </a>
                 </div>
                 <div className="mt-4 flex items-center gap-2 text-sm text-gray-400">
-                  <Mail size={13} />
+                  <i className="fas fa-envelope text-xs" />
                   info@purplefolder.com.np
                 </div>
               </div>

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { pathname } = useLocation()
+  const contactHref = pathname === '/' ? '#contact' : '/#contact'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 30)
@@ -56,7 +57,7 @@ export default function Navbar() {
               Career
             </Link>
             <a
-              href="#contact"
+              href={contactHref}
               className="bg-purple-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-purple-700 transition-colors duration-200 shadow-md hover:shadow-purple-200"
             >
               Get In Touch
@@ -71,7 +72,7 @@ export default function Navbar() {
                 : 'text-white hover:bg-white/10'
             }`}
           >
-            {isOpen ? <X size={22} /> : <Menu size={22} />}
+            <i className={`fas ${isOpen ? 'fa-xmark' : 'fa-bars'} text-xl`} />
           </button>
         </div>
 
@@ -96,7 +97,7 @@ export default function Navbar() {
               Career
             </Link>
             <a
-              href="#contact"
+              href={contactHref}
               onClick={() => setIsOpen(false)}
               className="bg-purple-600 text-white font-semibold px-4 py-2.5 rounded-xl text-center hover:bg-purple-700 transition-colors text-sm"
             >
