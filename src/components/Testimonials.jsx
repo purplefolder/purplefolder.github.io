@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react'
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const testimonials = [
@@ -74,8 +73,10 @@ export default function Testimonials() {
           backgroundSize: '40px 40px',
         }}
       />
+
+      {/* Top wave — fixed height so it never bleeds over content at large screens */}
       <div className="absolute top-0 left-0 right-0 pointer-events-none rotate-180">
-        <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none">
+        <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none" style={{ display: 'block', height: '60px' }}>
           <path d="M0 60L60 51C120 42 240 24 360 18C480 12 600 18 720 24C840 30 960 36 1080 39C1200 42 1320 42 1380 42L1440 42V0H0Z" fill="white" />
         </svg>
       </div>
@@ -104,39 +105,47 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Card */}
+        {/* Card — all 3 testimonials sit in the same grid cell so the tallest
+             one always sets the container height. No layout shift ever. */}
         <div className="relative">
-          <div
-            className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8 sm:p-12"
-            style={{
-              opacity: animating ? 0 : 1,
-              transform: animating
-                ? `translateX(${direction === 'right' ? '-30px' : '30px'})`
-                : 'translateX(0)',
-              transition: 'opacity 0.35s ease, transform 0.35s ease',
-            }}
-          >
-            <Quote
-              size={48}
-              className="text-purple-400/40 mb-6"
-            />
-            <p className="text-white text-lg sm:text-xl leading-relaxed mb-8 font-light">
-              &ldquo;{t.text}&rdquo;
-            </p>
-
-            <div className="flex items-center gap-4">
+          <div style={{ display: 'grid' }}>
+            {testimonials.map((item, i) => (
               <div
-                className={`w-12 h-12 ${t.color} rounded-2xl flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}
+                key={i}
+                className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8 sm:p-10 flex flex-col"
+                style={{
+                  gridArea: '1 / 1',
+                  opacity: i === current ? (animating ? 0 : 1) : 0,
+                  transform: i === current && animating
+                    ? `translateX(${direction === 'right' ? '-30px' : '30px'})`
+                    : 'translateX(0)',
+                  transition: 'opacity 0.35s ease, transform 0.35s ease',
+                  pointerEvents: i === current ? 'auto' : 'none',
+                }}
               >
-                {t.initials}
-              </div>
-              <div>
-                <div className="text-white font-semibold">{t.name}</div>
-                <div className="text-purple-300 text-sm">
-                  {t.company} · {t.country}
+                <i className="fas fa-quote-left text-4xl text-purple-400/40 block mb-5" />
+
+                <div className="flex-1 flex items-center">
+                  <p className="text-white text-lg sm:text-xl leading-relaxed font-light">
+                    &ldquo;{item.text}&rdquo;
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4 mt-7">
+                  <div
+                    className={`w-12 h-12 ${item.color} rounded-2xl flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}
+                  >
+                    {item.initials}
+                  </div>
+                  <div>
+                    <div className="text-white font-semibold">{item.name}</div>
+                    <div className="text-purple-300 text-sm">
+                      {item.company} · {item.country}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
 
           {/* Controls */}
@@ -145,7 +154,7 @@ export default function Testimonials() {
               onClick={prev}
               className="w-11 h-11 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl flex items-center justify-center text-white transition-colors"
             >
-              <ChevronLeft size={20} />
+              <i className="fas fa-chevron-left text-base" />
             </button>
 
             {/* Dots */}
@@ -167,14 +176,15 @@ export default function Testimonials() {
               onClick={next}
               className="w-11 h-11 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl flex items-center justify-center text-white transition-colors"
             >
-              <ChevronRight size={20} />
+              <i className="fas fa-chevron-right text-base" />
             </button>
           </div>
         </div>
       </div>
 
+      {/* Bottom wave — fixed height so boundary is always clean */}
       <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
-        <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none">
+        <svg viewBox="0 0 1440 60" fill="none" className="w-full" preserveAspectRatio="none" style={{ display: 'block', height: '60px' }}>
           <path d="M0 60L60 51C120 42 240 24 360 18C480 12 600 18 720 24C840 30 960 36 1080 39C1200 42 1320 42 1380 42L1440 42V60H0Z" fill="#f9fafb" />
         </svg>
       </div>

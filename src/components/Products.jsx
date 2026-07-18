@@ -1,5 +1,4 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import { ExternalLink } from 'lucide-react'
 
 function AnimatedDiv({ children, delay = 0, className = '' }) {
   const [ref, isVisible] = useScrollAnimation()
@@ -104,7 +103,7 @@ export default function Products() {
                     className={`inline-flex items-center gap-2 bg-gradient-to-r ${p.color} text-white text-sm font-semibold px-5 py-3 rounded-2xl hover:opacity-90 transition-opacity w-full justify-center`}
                   >
                     Visit Site
-                    <ExternalLink size={15} />
+                    <i className="fas fa-up-right-from-square text-sm" />
                   </a>
                 </div>
               </div>

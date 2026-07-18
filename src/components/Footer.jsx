@@ -1,6 +1,18 @@
-import { Facebook, Twitter, Linkedin } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
 
 export default function Footer() {
+  const { pathname } = useLocation()
+  const p = pathname === '/' ? '' : '/'
+
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'About Us', href: `${p}#about` },
+    { label: 'Our Products', href: `${p}#products` },
+    { label: 'Our Skills', href: `${p}#skills` },
+    { label: 'Career', href: '/career' },
+    { label: 'Get In Touch', href: `${p}#contact` },
+  ]
+
   return (
     <footer className="bg-gradient-to-br from-[#0f0720] via-[#2d1060] to-[#4c1d95] text-white pt-16 pb-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -22,10 +34,10 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { Icon: Facebook, href: 'https://www.facebook.com/purplefolder/' },
-                { Icon: Twitter, href: 'https://twitter.com/purple_folder' },
-                { Icon: Linkedin, href: 'https://www.linkedin.com/in/purplefolder' },
-              ].map(({ Icon, href }, i) => (
+                { icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/purplefolder/' },
+                { icon: 'fab fa-x-twitter', href: 'https://twitter.com/purple_folder' },
+                { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/purplefolder' },
+              ].map(({ icon, href }, i) => (
                 <a
                   key={i}
                   href={href}
@@ -33,7 +45,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="w-9 h-9 bg-white/10 hover:bg-purple-500 rounded-xl flex items-center justify-center text-purple-300 hover:text-white transition-all duration-200"
                 >
-                  <Icon size={15} />
+                  <i className={`${icon} text-sm`} />
                 </a>
               ))}
             </div>
@@ -45,14 +57,7 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="space-y-3">
-              {[
-                { label: 'Home', href: '/' },
-                { label: 'About Us', href: '#about' },
-                { label: 'Our Products', href: '#products' },
-                { label: 'Our Skills', href: '#skills' },
-                { label: 'Career', href: '/career' },
-                { label: 'Get In Touch', href: '#contact' },
-              ].map(({ label, href }) => (
+              {navLinks.map(({ label, href }) => (
                 <li key={label}>
                   <a
                     href={href}
@@ -81,15 +86,6 @@ export default function Footer() {
               </li>
               <li className="text-purple-300 text-sm">Kathmandu, Nepal</li>
             </ul>
-
-            <div className="mt-8">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-semibold px-5 py-2.5 rounded-2xl transition-all duration-200"
-              >
-                Fill Your Resource
-              </a>
-            </div>
           </div>
         </div>
 
