@@ -6,50 +6,35 @@ const skillGroups = [
     icon: 'fa-laptop-code',
     chipClass: 'bg-blue-100 text-blue-700 border-blue-200',
     headerClass: 'text-blue-600 bg-blue-50',
-    skills: ['HTML / CSS', 'JavaScript', 'Web Applications', 'React'],
+    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
     icon: 'fa-server',
     chipClass: 'bg-emerald-100 text-emerald-700 border-emerald-200',
     headerClass: 'text-emerald-600 bg-emerald-50',
-    skills: ['Node.js', 'Django', 'Flask', 'Software Engineering'],
+    skills: ['Node.js', 'Python', 'Django', 'REST APIs'],
+  },
+  {
+    title: 'AI & Automation',
+    icon: 'fa-robot',
+    chipClass: 'bg-violet-100 text-violet-700 border-violet-200',
+    headerClass: 'text-violet-600 bg-violet-50',
+    skills: ['Generative AI', 'LLM Integration', 'AI Agents', 'Workflow Automation'],
   },
   {
     title: 'Cloud & DevOps',
     icon: 'fa-cloud',
     chipClass: 'bg-sky-100 text-sky-700 border-sky-200',
     headerClass: 'text-sky-600 bg-sky-50',
-    skills: [
-      'Amazon Services',
-      'Google Cloud Services',
-      'Docker',
-      'Airflow',
-      'Continuous Integration',
-      'Release Engineering',
-      'Source Code Management',
-    ],
+    skills: ['AWS', 'Docker', 'CI/CD', 'Release Engineering'],
   },
   {
     title: 'Databases',
     icon: 'fa-database',
     chipClass: 'bg-orange-100 text-orange-700 border-orange-200',
     headerClass: 'text-orange-600 bg-orange-50',
-    skills: ['MongoDB', 'MySQL', 'Redis', 'PostgreSQL'],
-  },
-  {
-    title: 'Data Science',
-    icon: 'fa-chart-bar',
-    chipClass: 'bg-violet-100 text-violet-700 border-violet-200',
-    headerClass: 'text-violet-600 bg-violet-50',
-    skills: ['Pandas', 'NumPy', 'Data Science'],
-  },
-  {
-    title: 'Automation',
-    icon: 'fa-robot',
-    chipClass: 'bg-rose-100 text-rose-700 border-rose-200',
-    headerClass: 'text-rose-600 bg-rose-50',
-    skills: ['Scrapy', 'BeautifulSoup', 'Scrapinghub', 'Selenium Automation'],
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis'],
   },
 ]
 
@@ -106,8 +91,8 @@ export default function Skills() {
             Our Wide Skill Sets
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            From frontend to backend, cloud to data science — we cover the full
-            modern tech stack.
+            From frontend to backend, cloud to AI — the stack we build with
+            today.
           </p>
         </div>
 

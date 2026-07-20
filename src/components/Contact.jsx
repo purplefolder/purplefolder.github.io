@@ -106,28 +106,28 @@ export default function Contact() {
               <div className="relative z-10">
                 <div className="text-4xl mb-6">🚀</div>
                 <h3 className="text-2xl font-black mb-3">
-                  Ready to outsource?
+                  Let&apos;s build something.
                 </h3>
                 <p className="text-purple-300 text-sm leading-relaxed mb-8">
-                  Fill your resource gap with our expert team. We handle
-                  everything from small features to full product builds —
-                  on time, every time.
+                  Tell us what you&apos;re building. We&apos;ll bring a
+                  dedicated engineering team to make it happen — from a
+                  single feature to a full product.
                 </p>
               </div>
               <div className="relative z-10 space-y-3">
                 <a
-                  href="mailto:info@purplefolder.com.np"
-                  className="block bg-white text-purple-900 font-bold text-sm px-6 py-3.5 rounded-2xl text-center hover:bg-purple-50 transition-colors"
-                >
-                  Send Us an Email
-                </a>
-                <a
-                  href="https://www.facebook.com/purplefolder/"
+                  href="https://calendly.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="block bg-white text-purple-900 font-bold text-sm px-6 py-3.5 rounded-2xl text-center hover:bg-purple-50 transition-colors"
+                >
+                  Book a Call
+                </a>
+                <a
+                  href="mailto:info@purplefolder.com.np"
                   className="block bg-white/10 border border-white/20 text-white font-semibold text-sm px-6 py-3.5 rounded-2xl text-center hover:bg-white/20 transition-colors"
                 >
-                  Message on Facebook
+                  Send Us an Email
                 </a>
               </div>
             </div>
