@@ -25,10 +25,10 @@ function AnimatedDiv({ children, direction = 'up', delay = 0, className = '' }) 
 }
 
 const highlights = [
-  'Expert team of Computer Engineers since 2014',
-  'Responsive and always available to clients',
-  'Freelance & long-term partnership models',
-  'Mobile apps to full-stack web applications',
+  'Senior engineering team building software since 2014',
+  'Clear, responsive communication on every project',
+  'Dedicated teams and long-term engineering partnerships',
+  'Full-stack web, backend, and AI-powered products',
 ]
 
 export default function About() {
@@ -48,20 +48,21 @@ export default function About() {
               </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              We are a team of Computer Engineers who have been working since
-              2014 in the field of web applications and backend development.
+              We&apos;re a team of software engineers who&apos;ve been building
+              web applications, backend systems, and AI-powered products since
+              2014.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              We have been outsourcing through freelancing platforms to
-              international clients, delivering high-quality solutions on time.
-              Our team knows the value of clients&apos; satisfaction — being
-              responsive and always available is our strongest side.
+            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              We work as a dedicated extension of our clients&apos; teams —
+              international and local — delivering high-quality software on
+              time. Clear communication and reliability are what keep our
+              partnerships long-term.
             </p>
 
             <ul className="space-y-3">
               {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <i className="fas fa-circle-check text-purple-500 text-xl mt-0.5 flex-shrink-0" />
+                <li key={item} className="flex items-center gap-3">
+                  <i className="fas fa-circle-check text-purple-500 text-xl flex-shrink-0" />
                   <span className="text-gray-700 text-sm">{item}</span>
                 </li>
               ))}

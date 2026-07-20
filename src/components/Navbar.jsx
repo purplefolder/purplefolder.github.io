@@ -35,7 +35,7 @@ export default function Navbar() {
                 scrolled ? 'text-purple-900' : 'text-white'
               }`}
             >
-              Purple Folder Services
+              Purple Folder
             </span>
           </Link>
 

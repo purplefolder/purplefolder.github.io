@@ -208,7 +208,7 @@ export default function CareerPage() {
               to="/"
               className="text-purple-600 hover:text-purple-800 text-sm font-medium transition-colors"
             >
-              ← Back to Purple Folder Services
+              ← Back to Purple Folder
             </Link>
           </AnimatedDiv>
         </div>

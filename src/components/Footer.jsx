@@ -26,11 +26,12 @@ export default function Footer() {
                 className="h-8 w-auto"
                 onError={(e) => { e.target.style.display = 'none' }}
               />
-              <span className="font-bold text-base">Purple Folder Services</span>
+              <span className="font-bold text-base">Purple Folder</span>
             </div>
             <p className="text-purple-300 text-sm leading-relaxed mb-6">
-              Quality and timely delivery is our goal. Outsource with
-              confidence to our expert team in Kathmandu, Nepal.
+              A dedicated software engineering team in Kathmandu, building
+              web, backend, and AI-powered products for clients worldwide
+              since 2014.
             </p>
             <div className="flex gap-3">
               {[
@@ -91,7 +92,7 @@ export default function Footer() {
 
         <div className="pt-8 text-center">
           <p className="text-purple-400 text-xs">
-            © {new Date().getFullYear()} Purple Folder Services Nepal. All rights reserved.
+            © {new Date().getFullYear()} Purple Folder. All rights reserved.
           </p>
         </div>
       </div>
