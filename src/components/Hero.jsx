@@ -47,7 +47,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://calendly.com/"
+            href="https://calendly.com/purple-folder/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-purple-900 font-bold px-8 py-4 rounded-full hover:bg-purple-50 transition-all duration-200 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 text-sm sm:text-base"
