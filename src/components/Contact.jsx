@@ -116,7 +116,7 @@ export default function Contact() {
               </div>
               <div className="relative z-10 space-y-3">
                 <a
-                  href="https://calendly.com/"
+                  href="https://calendly.com/purple-folder/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-white text-purple-900 font-bold text-sm px-6 py-3.5 rounded-2xl text-center hover:bg-purple-50 transition-colors"
